@@ -20,6 +20,6 @@ use App\Http\Controllers\BobotController;
 //     return view('welcome');
 // });
 
-Route::resource('/alternatif', cobaController::class);
+Route::resource('/', cobaController::class);
 Route::resource('hasil', HasilController::class);
 Route::resource('bobot', BobotController::class);
