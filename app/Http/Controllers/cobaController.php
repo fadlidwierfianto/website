@@ -13,7 +13,7 @@ class cobaController extends Controller
     public function index()
     {
         $alternatif = alternatif::all();
-        return view('index', ['alternatif' => $alternatif]);
+        return view('game.index', ['alternatif' => $alternatif]);
     }
 
     /**
@@ -21,7 +21,7 @@ class cobaController extends Controller
      */
     public function create()
     {
-        return view('input_game');
+        return view('game.input_game');
     }
 
     /**
@@ -52,7 +52,7 @@ class cobaController extends Controller
     public function show(string $id)
     {
         $alternatif = alternatif::find($id);
-        return view('show_game', ['alternatif' => $alternatif]);
+        return view('game.show_game', ['alternatif' => $alternatif]);
 
     }
 
@@ -62,7 +62,7 @@ class cobaController extends Controller
     public function edit(string $id)
     {
         $alternatif = alternatif::find($id);
-        return view('edit_game', ['alternatif' => $alternatif]);
+        return view('game.edit_game', ['alternatif' => $alternatif]);
 
     }
 

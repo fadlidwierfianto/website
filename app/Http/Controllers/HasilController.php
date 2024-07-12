@@ -13,7 +13,7 @@ class HasilController extends Controller
     public function index()
     {
         $hasil = hasil::all();
-        return view('hasil', ['hasil' => $hasil]);
+        return view('hasil.hasil', compact('hasil'));
     }
 
     /**

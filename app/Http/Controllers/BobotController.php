@@ -13,7 +13,7 @@ class BobotController extends Controller
     public function index()
     {
         $bobot = bobot::all();
-        return view('bobot', ['bobot' => $bobot]);
+        return view('bobot.bobot', ['bobot' => $bobot]);
     }
 
     /**
@@ -46,7 +46,7 @@ class BobotController extends Controller
     public function edit(string $id)
     {
         $bobot = bobot::find($id);
-        return view('edit_bobot', ['bobot' => $bobot]);
+        return view('bobot.edit_bobot', ['bobot' => $bobot]);
     }
 
     /**
